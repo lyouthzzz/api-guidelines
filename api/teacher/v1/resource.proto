@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package teacher.v1;
+
+option go_package = "github.com/lyouthzzz/api-guidelines/api/teacher/v1;teacherV1";
+
+message Teacher {
+  int32 id = 1;
+  // 名称
+  string name = 2;
+  // 性别
+  int32 sex = 3;
+  // 生日
+  int32 birthday = 4;
+  // 邮箱
+  string email = 5;
+}
+
+message GetTeacherRequest {
+  int32 id = 1;
+}
+
+message GetTeacherReply {
+  int32 code = 1;
+  string message = 2;
+  Teacher data = 3;
+}
+
+message UpdateTeacherRequest {
+  int32 id = 1;
+  string email = 2;
+}
+
+message UpdateTeacherReply {
+  int32 code = 1;
+  string message = 2;
+  Teacher data = 3;
+}
+
+message DeleteTeacherRequest {
+  int32 id = 1;
+}
+
+message DeleteTeacherReply {
+  int32 code = 1;
+  string message = 2;
+}

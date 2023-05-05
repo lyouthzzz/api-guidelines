@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package course.v1;
+
+option go_package = "github.com/lyouthzzz/api-guidelines/api/course/v1;courseV1";
+
+message Course {
+  int32 id = 1;
+  string name = 2;
+  string teacher_name = 3;
+  int32 teacher_id = 4;
+  int64 created_time = 6;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package class.v1;
+
+option go_package = "github.com/lyouthzzz/api-guidelines/api/class/v1;classV1";
+
+message class {
+  int32 id = 1;
+  // 班
+  int32 class = 2;
+  // 级
+  int32 grade = 3;
+  // 名称
+  string name = 4;
+  // 班主任名称
+  string manager_name = 5;
+  // 班主任ID
+  int32 manger_id = 6;
+}
