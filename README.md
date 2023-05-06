@@ -9,3 +9,5 @@ REST API guidelines
 [google-api-design-guide](https://google-cloud.gitbook.io/api-design-guide/)
 
 [googleapis](https://github.com/googleapis/googleapis)
+
+[microsoft-api-guidelines](https://github.com/microsoft/api-guidelines)
