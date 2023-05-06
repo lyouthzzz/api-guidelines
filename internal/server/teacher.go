@@ -15,3 +15,6 @@ func (srv *TeacherServer) CreateTeacher(c *gin.Context) {}
 func (srv *TeacherServer) UpdateTeacher(c *gin.Context) {}
 
 func (srv *TeacherServer) DeleteTeacher(c *gin.Context) {}
+
+// ExportTeacherList 导出教师列表
+func (srv *TeacherServer) ExportTeacherList(c *gin.Context) {}
